@@ -1,0 +1,653 @@
+* {
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+}
+
+@import 'colors';
+
+/* COMIENZA EL STYLE BÁSICO DE LA PÁGINA */
+.logos {
+	width: 6em;
+	height: 6em;
+}
+
+.disclaimer {
+	display: none;
+}
+
+#logoPosada {
+	display: none;
+}
+
+.containerBarra {
+	width: 100%;
+	height: 38em;
+	background-image: url(../img/imagenplaya.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+
+	h1 {
+		font-family: 'Cinzel', serif;
+		color: $colorPrincipal;
+		font-size: 35px;
+		text-shadow: #000 1px 1px;
+	}
+}
+
+.titulo {
+	margin-top: 181px;
+}
+
+article {
+	font-size: xx-large;
+}
+
+/* STYLES BARRA DE NAVEGACIÓN */
+#navbarNav {
+	background-color: $mainColor;
+	margin: auto;
+	padding: 35px 0;
+	align-items: center;
+	justify-content: center;
+	position: sticky;
+	top: 0;
+
+	ul {
+		li {
+			list-style: none;
+			display: inline-block;
+			margin: 0 20px;
+			font-family: 'Nunito', sans-serif;
+			position: relative;
+
+			a {
+				color: rgb(0, 0, 0);
+				text-decoration: none;
+				font-size: 1.1em;
+				font-weight: bold;
+
+				&:hover {
+					color: #fff;
+
+					&::before {
+						width: 100%;
+					}
+				}
+
+				&::before {
+					content: "";
+					height: 1px;
+					width: 0;
+					background: #fff;
+					position: absolute;
+					left: 0%;
+					bottom: -1px;
+					transition: 0.1s ease-out;
+				}
+			}
+		}
+	}
+}
+
+.navbar {
+	padding: 0;
+}
+
+.navbar-nav {
+	position: sticky;
+}
+
+.container-fluid {
+	padding: 0;
+	background-color: $mainColor;
+}
+
+/* STYLE DE PÁGINA BASE */
+.container-main {
+	background-color: $mainColor;
+	width: 100%;
+	height: 100%;
+	font-family: 'Nunito', sans-serif;
+	border: 2px solid #000;
+	padding-top: 30px;
+
+	h2 {
+		text-align: center;
+		font-size: 1.3em;
+		margin: 40px 0;
+		font-family: 'Lato', sans-serif;
+	}
+
+	section {
+		padding: 20px 5px;
+	}
+
+	p {
+		margin: 0 30px;
+	}
+}
+
+.container-footer {
+	object-position: bottom;
+	background-color: $mainColor;
+	width: 100%;
+	padding: 10px;
+
+	a {
+		text-decoration: none;
+	}
+
+	i {
+		color: $colorPrincipal;
+		width: 3em;
+	}
+}
+
+.redirecciones {
+	text-align: center;
+}
+
+.carousel {
+	padding-bottom: 2em;
+}
+
+.recomendacion {
+	padding-top: 1em;
+}
+
+.colorPrincipal {
+	color: $colorPrincipal;
+}
+
+#carouselExampleSlidesOnly {
+	width: 30em;
+}
+
+.carouselBorder {
+	border: 5px solid #fff;
+	border-radius: 1px;
+}
+
+.containerInicio {
+	width: 60%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.subtitulosContainer {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	margin: auto;
+	padding-bottom: 3em;
+
+	h2 {
+		font-size: 1.8em;
+		font-family: 'Lato', sans-serif;
+	}
+
+	p {
+		margin: auto text-align center;
+		font-size: 1.7em;
+
+		a {
+			color: #000;
+		}
+	}
+}
+
+.subtitulosContainer-1 {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	padding-bottom: 3em;
+
+	h2 {
+		font-size: 1.8em;
+		font-family: 'Lato', sans-serif;
+	}
+
+	p {
+		margin: auto text-align center;
+		font-size: 1.7em;
+
+		a {
+			color: #000;
+		}
+	}
+}
+
+.subtitulosContainer-2 {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	margin: auto;
+	padding: 6em 0;
+
+	h2 {
+		font-size: 2em;
+		font-family: 'Lato', sans-serif;
+	}
+
+	p {
+		margin: auto text-align center;
+		font-size: 1.7em;
+
+		a {
+			color: #000;
+		}
+	}
+}
+
+.containerInicio {
+	padding-top: 7em;
+}
+/* STYLES CONTACTO */
+.formularioContacto {
+	width: 30%;
+	margin: auto;
+	text-align: center;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+
+	label {
+		font-weight: bolder;
+		font-size: 1.4em;
+		padding: 0.7em 0;
+	}
+
+	p {
+		font-weight: bolder;
+		font-size: 2em;
+		padding-top: .6em;
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.campoEscritura {
+	width: 80%;
+	height: 3em;
+	border: none;
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+	outline: 0;
+}
+
+.contactoPersonal {
+	width: 27%;
+	text-align: center;
+	margin: auto;
+
+	ul {
+		li {
+			list-style-type: none;
+
+			a {
+				text-decoration: underline;
+				color: #000;
+				font-size: 1.5em;
+			}
+		}
+	}
+
+	p {
+		font-weight: bolder;
+		font-size: 2em;
+		padding-bottom: 1.2em;
+	}
+}
+
+.caller {
+	padding-bottom: 50px;
+}
+
+.containerContacto {
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 3em;
+}
+
+.sendForm {
+	padding: .7em 0;
+}
+
+/* STYLES UBICACIÓN */
+.ubicacionPosada {
+	margin: auto;
+	width: 80%;
+
+	iframe {
+		width: 100%;
+	}
+}
+
+/* STYLES ATRACCIONES */
+.paddingBox {
+	padding: 5em 0;
+
+	.greyBox {
+		display: flex;
+		padding: 5em 0;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		margin: auto;
+		background-color: #999;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+
+		h3 {
+			font-size: 2em;
+			font-family: 'Lato', sans-serif;
+			text-align: center;
+			padding-bottom: 1em;
+		}
+
+		.itemList {
+			display: flex;
+			justify-content: space-around;
+			align-content: center;
+
+			li {
+				font-size: 1.3em;
+			}
+		}
+
+		p {
+			padding-top: 1em;
+			text-align: center;
+			font-size: 1.1em;
+		}
+
+		#inicioP {
+			font-size: 1.3em;
+		}
+	}
+}
+
+/* APARECE EL LOGO */
+@media screen and (max-width:991px) {
+	#logoPosada {
+		display: block;
+		width: 6em;
+	}
+}
+
+/* MOBILE DESIGN */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+	/* RESPONSIVE VALORACIONES PÁGINA BASE */
+	.container-fluid {
+		padding: .5em 0;
+	}
+
+	.subtitulosContainer-1 {
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+
+		p {
+			font-size: 1.7em;
+		}
+	}
+
+	#carouselExampleSlidesOnly {
+		margin: auto;
+	}
+
+	.containerInicio {
+		margin: auto;
+		flex-direction: column;
+		width: 85%;
+	}
+
+	.subtitulosContainer-2 {
+		width: 90%;
+
+		p {
+			font-size: 1.4em;
+		}
+	}
+
+	/* STYLES CONTACTO */
+	.containerContacto {
+		flex-direction: column;
+	}
+
+	.formularioContacto {
+		width: 90%;
+	}
+
+	.campoEscritura {
+		width: 70%;
+	}
+
+	.contactoPersonal {
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+		padding-top: 3em;
+
+		p {
+			font-size: 1.3em;
+		}
+
+		ul {
+			li {
+				a {
+					font-size: 1.3em;
+				}
+			}
+
+			text-align: center;
+		}
+	}
+
+	.caller {
+		padding-bottom: 27px;
+	}
+
+	/* STYLES ATRACCIONES */
+	.subtitulosContainer {
+		width: 90%;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+	/* RESPONSIVE VALORACIONES PÁGINA BASE */
+	.container-fluid {
+		padding: .5em 0;
+	}
+
+	.subtitulosContainer-1 {
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+
+		p {
+			font-size: 1.7em;
+		}
+	}
+
+	#carouselExampleSlidesOnly {
+		margin: auto;
+		width: 26em;
+	}
+
+	.containerInicio {
+		margin: auto;
+		flex-direction: column;
+		width: 85%;
+	}
+
+	.subtitulosContainer-2 {
+		width: 90%;
+
+		p {
+			font-size: 1.4em;
+		}
+	}
+
+	/* STYLES CONTACTO */
+	.containerContacto {
+		flex-direction: column;
+	}
+
+	.formularioContacto {
+		width: 90%;
+	}
+
+	.campoEscritura {
+		width: 90%;
+	}
+
+	.contactoPersonal {
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+		padding-top: 3em;
+
+		p {
+			font-size: 1.3em;
+		}
+
+		ul {
+			li {
+				a {
+					font-size: 1.3em;
+				}
+			}
+
+			text-align: center;
+		}
+	}
+
+	/* STYLES ATRACCIONES */
+	.subtitulosContainer {
+		width: 90%;
+	}
+
+	.paddingBox {
+		.greyBox {
+			width: 90%;
+
+			.itemList {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+	}
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+	/* RESPONSIVE VALORACIONES PÁGINA BASE */
+	.container-fluid {
+		padding: .5em 0;
+	}
+
+	.subtitulosContainer-1 {
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+
+		h2 {
+			font-size: 1.5em;
+		}
+
+		p {
+			font-size: 1.7em;
+		}
+	}
+
+	#carouselExampleSlidesOnly {
+		margin: auto;
+		width: 95%;
+	}
+
+	.containerInicio {
+		margin: auto;
+		flex-direction: column;
+		width: 85%;
+	}
+
+	.subtitulosContainer-2 {
+		width: 90%;
+
+		p {
+			font-size: 1.4em;
+		}
+	}
+
+	/* STYLES CONTACTO */
+	.containerContacto {
+		flex-direction: column;
+	}
+
+	.formularioContacto {
+		width: 90%;
+	}
+
+	.campoEscritura {
+		width: 90%;
+	}
+
+	.contactoPersonal {
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+		padding-top: 3em;
+
+		p {
+			font-size: 1.3em;
+		}
+
+		ul {
+			li {
+				a {
+					font-size: 1.3em;
+				}
+			}
+
+			text-align: center;
+		}
+	}
+
+	.caller {
+		padding-bottom: 20px;
+	}
+
+	/* STYLES ATRACCIONES */
+	.subtitulosContainer {
+		width: 90%;
+
+		p {
+			font-size: 1.4em;
+		}
+	}
+
+	.paddingBox {
+		.greyBox {
+			width: 90%;
+
+			.itemList {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+	}
+}
